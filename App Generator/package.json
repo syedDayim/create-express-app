@@ -1,15 +1,23 @@
 {
-  "name": "app-generator",
-  "version": "1.0.0",
-  "description": "This will help you generate a starting express application.",
+  "name": "my-express-generator",
+  "version": "1.0.4",
+  "description": "This package generates the express starter template",
   "main": "index.js",
   "scripts": {
-    
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "syedDayim",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedDayim/create-express-app.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "dayim1",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
-    "fs-extra": "^11.2.0"
-  }
+  "bugs": {
+    "url": "https://github.com/syedDayim/create-express-app/issues"
+  },
+  "homepage": "https://github.com/syedDayim/create-express-app#readme"
 }

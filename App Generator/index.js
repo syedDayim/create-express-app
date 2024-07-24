@@ -18,7 +18,7 @@ if (!projectName) {
 }
 
 // Define the folder paths
-const baseFolderPath = path.resolve(__dirname, `../${projectName}`);
+const baseFolderPath = path.resolve(process.cwd(), `../${projectName}`);
 const createController = path.join(baseFolderPath, 'controller');
 const routeController = path.join(baseFolderPath, 'routes');
 const viewsController = path.join(baseFolderPath, 'views');
@@ -26,16 +26,12 @@ const partials = path.join(viewsController, 'partials')
 const middleware = path.join(baseFolderPath, 'middleware');
 const db = path.join(baseFolderPath, 'db');
 const models = path.join(baseFolderPath, 'models');
-
 const publicFolder = path.join(baseFolderPath, 'public');
 const css = path.join(publicFolder, 'css');
 const images = path.join(publicFolder, 'images');
 const js = path.join(publicFolder, 'js');
-
 const appJS = path.join(baseFolderPath, 'app.js');
 const gitIgnore = path.join(baseFolderPath, '.gitignore');
-
-
 
 // Content for app.js
 const content_of_appJs = `
@@ -54,8 +50,6 @@ app.listen(port, () => {
 
 // Content for .gitignore
 const content_of_gitIgnore = '/node_modules';
-
-
 
 function setupNpm(projectPath) {
   // Change to the project directory
@@ -93,7 +87,6 @@ function setupNpm(projectPath) {
   console.log('NPM initialization, express installation, and package.json update complete.');
 }
 
-
 // Create the folders
 createFolder(baseFolderPath);
 createFolder(createController);
@@ -107,7 +100,6 @@ createFolder(models);
 createFolder(css);
 createFolder(images);
 createFolder(js);
-
 
 // Create files
 createFile(appJS, content_of_appJs);
