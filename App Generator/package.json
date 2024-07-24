@@ -3,6 +3,9 @@
   "version": "1.0.4",
   "description": "This package generates the express starter template",
   "main": "index.js",
+  "bin": {
+    "create-express-app": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
