@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -18,7 +19,7 @@ if (!projectName) {
 }
 
 // Define the folder paths
-const baseFolderPath = path.resolve(process.cwd(), `../${projectName}`);
+const baseFolderPath = path.resolve(process.cwd(), `./${projectName}`);
 const createController = path.join(baseFolderPath, 'controller');
 const routeController = path.join(baseFolderPath, 'routes');
 const viewsController = path.join(baseFolderPath, 'views');

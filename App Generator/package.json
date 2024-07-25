@@ -1,12 +1,13 @@
 {
   "name": "my-express-generator",
-  "version": "1.0.4",
+  "version": "1.0.9",
   "description": "This package generates the express starter template",
   "main": "index.js",
   "bin": {
     "create-express-app": "./index.js"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +15,8 @@
     "url": "git+https://github.com/syedDayim/create-express-app.git"
   },
   "keywords": [
-    "express"
+    "express",
+    "express-generator"
   ],
   "author": "dayim1",
   "license": "ISC",
